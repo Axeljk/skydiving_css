@@ -1,0 +1,39 @@
+/* Styling for everything. */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Styling for the page itself. */
+html,
+body,
+main {
+	min-height: 100vh;
+}
+
+#jump,
+#thrill,
+#equipment,
+#booking {
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+	height: 100vh;
+}
+
+#jump {
+	background-image: url("../img/bg_jump.jpg");
+}
+
+#thrill {
+	background-image: url("../img/bg_thrill.jpg");
+}
+
+#equipment{
+	background-image: url("../img/bg_equipment.jpg");
+}
+
+#booking {
+	background-image: url("../img/bg_booking.jpg");
+}
