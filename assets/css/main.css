@@ -12,6 +12,7 @@ main {
 	min-height: 100vh;
 }
 
+/* Parallex backgrounds. */
 #jump,
 #thrill,
 #equipment,
@@ -21,19 +22,27 @@ main {
 	background-size: cover;
 	height: 100vh;
 }
-
 #jump {
 	background-image: url("../img/bg_jump.jpg");
 }
-
 #thrill {
 	background-image: url("../img/bg_thrill.jpg");
 }
-
 #equipment{
 	background-image: url("../img/bg_equipment.jpg");
 }
-
 #booking {
 	background-image: url("../img/bg_booking.jpg");
+}
+
+/* Skydiver container fixed to center of screen. */
+#skydiver {
+	position: fixed;
+	height: 20vh;
+	bottom: 40vh;
+	left: 30vw;
+}
+#skydiver img {
+	height: 100%;
+	width: auto;
 }
