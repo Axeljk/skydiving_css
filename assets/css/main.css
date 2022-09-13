@@ -20,10 +20,17 @@ main {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
+	height: 150vh;
 }
 #jump {
-	background-image: url("../img/bg_jump.jpg");
+	background-image: linear-gradient(#4f9bd9, #8ecae6);
+	overflow: hidden;
+}
+#jump h1 {
+	position: absolute;
+	bottom: 10vh;
+	right: 5vw;
+	font-size: 4em;
 }
 #thrill {
 	background-image: url("../img/bg_thrill.jpg");
@@ -45,4 +52,26 @@ main {
 #skydiver img {
 	height: 100%;
 	width: auto;
+}
+
+/* Plane container in #jump section. Swoops in and sticks to background. */
+#plane {
+	position: relative;
+	transition-property: height, width, bottom, right;
+	transition-duration: 1.0s;
+	transition-timing-function: cubic-bezier(0.1,0.4,0.8,1);
+}
+#plane img {
+	height: 100%;
+	width: auto;
+}
+.plane-off-camera {
+	height: 150vh;
+	bottom: 100vh;
+	right: -95vw;
+}
+.plane-arrive {
+	height: 80vh;
+	bottom: 0vh;
+	right: 0vw;
 }
