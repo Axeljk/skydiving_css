@@ -75,3 +75,8 @@ main {
 	bottom: 0vh;
 	right: 0vw;
 }
+.plane-depart {
+	height: 50vh;
+	bottom: -20vh;
+	right: 50vw;
+}
