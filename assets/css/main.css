@@ -1,3 +1,6 @@
+/* Google Font imports. */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
 /* Styling for everything. */
 * {
 	box-sizing: border-box;
@@ -10,6 +13,33 @@ html,
 body,
 main {
 	min-height: 100vh;
+
+}
+main {
+	background-attachment: fixed;
+	background-image: linear-gradient(#4f9bd9, #8ecae6);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cabin Sketch', cursive;
+	color: white;
+	text-shadow: 2px 2px #000;
+	transition: opacity 0.5s;
+	position: fixed;
+	max-width: 75%;
+	z-index: 1000;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+h1 {
+	font-size: 4em;
+}
+h2 {
+	font-size: 3.5em;
+}
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
 }
 
 /* Parallex backgrounds. */
@@ -17,29 +47,44 @@ main {
 #thrill,
 #equipment,
 #booking {
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	background-position: center;
 	background-size: cover;
-	height: 150vh;
+	height: 200vh;
 }
 #jump {
-	background-image: linear-gradient(#4f9bd9, #8ecae6);
+	background-image: linear-gradient(#4f9bd9ff, #8ecae600);
 	overflow: hidden;
 }
-#jump h1 {
-	position: absolute;
+#jump-header {
 	bottom: 10vh;
+	margin-left: auto;
 	right: 5vw;
-	font-size: 4em;
+	text-align: right;
 }
 #thrill {
-	background-image: url("../img/bg_thrill.jpg");
+
+}
+#thrill-header {
+	left: 5vw;
+	top: 5vh;
+}
+#thrill div {
+
 }
 #equipment{
-	background-image: url("../img/bg_equipment.jpg");
+	background-image: linear-gradient(#8ecae600, #9ED2EA);
+}
+#equipment-header {
+	left: 5vw;
+	bottom: 10vh;
 }
 #booking {
-	background-image: url("../img/bg_booking.jpg");
+	background-image: linear-gradient(#9ED2EA, #4f9bd9);
+}
+#booking-header {
+	right: 5vw;
+	top: 10vh;
 }
 
 /* Skydiver container fixed to center of screen. */
@@ -79,4 +124,14 @@ main {
 	height: 50vh;
 	bottom: -20vh;
 	right: 50vw;
+}
+
+.invisible {
+	opacity: 0;
+}
+
+#scroll-message {
+	text-align: center;
+	bottom: 5vh;
+	width: 100vw;
 }
