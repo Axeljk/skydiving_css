@@ -27,6 +27,7 @@ window.onload = () => {
 			document.getElementById("jump-header").classList.remove("invisible");
 		} else if (section == sections.thrill) {
 			document.getElementById("thrill-header").classList.remove("invisible");
+			document.getElementById("thrill-img-container").classList.remove("invisible");
 		} else if (section == sections.equipment) {
 			document.getElementById("equipment-header").classList.remove("invisible");
 		} else {
@@ -40,6 +41,7 @@ window.onload = () => {
 			document.getElementById("jump-header").classList.add("invisible");
 		} else if (section == sections.thrill) {
 			document.getElementById("thrill-header").classList.add("invisible");
+			document.getElementById("thrill-img-container").classList.add("invisible");
 		} else if (section == sections.equipment) {
 			document.getElementById("equipment-header").classList.add("invisible");
 		} else {

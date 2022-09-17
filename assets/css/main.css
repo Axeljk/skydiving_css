@@ -69,8 +69,23 @@ h2 {
 	left: 5vw;
 	top: 5vh;
 }
-#thrill div {
-
+#thrill-img-container {
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 300px;
+	width: 18%;
+	height: 80vh;
+	top: 10vh;
+	right: 5vw;
+}
+.thrill-img {
+	width: 100%;
+	height: auto;
+	box-shadow: 5px 10px 10px 5px #00000044;
+	border-radius: 8px;
+	border: 1px solid #334c6699;
 }
 #equipment{
 	background-image: linear-gradient(#8ecae600, #9ED2EA);
